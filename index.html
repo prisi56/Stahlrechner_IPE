@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<style type="text/css">
+form {
+         background-image:url(images/hg.png);
+         background-repeat:no-repeat;
+         padding:20px;
+         border:6px solid #ddd;
+         }
+td, input, select, textarea {
+         font-size:11px;
+         font-family:Verdana,sans-serif;
+         }
+input, select, textarea {
+         color:#00c; }
+.Bereich, .Feld {
+         background-color:#ffa;
+         width:300px; border:6px solid #ddd;
+         }
+.Auswahl {
+         background-color:#dff;
+         width:300px;
+         border:6px solid #ddd;
+         }
+.Check, .Radio {
+         background-color:#ddff;
+         border:1px solid #ddd;
+         }
+.Button {
+         background-color:#aaa;
+         color:#fff;
+         width:200px;
+         border:6px solid #ddd; }
+</style>
+
+<TITLE>Gewicht berechnen</TITLE>
+<SCRIPT language="JavaScript">function loese() {
+var tl=document.formular.tl.value;
+var mp=document.formular.mp.value;
+var s=document.formular.s.value;
+var p=tl.replace(/,/,".");
+var q=mp.replace(/,/,".");
+if (s=="IPE80") {document. formular.x1.value=p*6
+document. formular.x2.value=p*6*q;
+}
+else if (s=="IPE100") {document. formular.x1.value=p*8.1
+document. formular.x2.value=p*8.1*q;
+}
+else if (s=="IPE120") {document. formular.x1.value=p*10.4
+document. formular.x2.value=p*10.4*q;
+}
+else if (s=="IPE140") {document. formular.x1.value=p*12.9
+document. formular.x2.value=p*12.9*q;
+}
+else if (s=="IPE160") {document. formular.x1.value=p*15.8
+document. formular.x2.value=p*15.8*q;
+}
+else if (s=="IPE180") {document. formular.x1.value=p*18.8
+document. formular.x2.value=p*18.8*q;
+}
+else if (s=="IPE200") {document. formular.x1.value=p*22.4
+document. formular.x2.value=p*22.4*q;
+}
+else if (s=="IPE220") {document. formular.x1.value=p*26.2
+document. formular.x2.value=p*26.2*q;
+}
+else if (s=="IPE240") {document. formular.x1.value=p*30.7
+document. formular.x2.value=p*30.7*q;
+}
+else if (s=="IPE270") {document. formular.x1.value=p*36.1
+document. formular.x2.value=p*36.1*q;
+}
+else if (s=="IPE300") {document. formular.x1.value=p*42.2
+document. formular.x2.value=p*42.2*q;
+}
+else if (s=="IPE330") {document. formular.x1.value=p*49.1
+document. formular.x2.value=p*49.1*q;
+}
+else if (s=="IPE360") {document. formular.x1.value=p*57.1
+document. formular.x2.value=p*57.1*q;
+}
+else if (s=="IPE400") {document. formular.x1.value=p*66.3
+document. formular.x2.value=p*66.3*q;
+}
+else if (s=="IPE450") {document. formular.x1.value=p*77.6
+document. formular.x2.value=p*77.6*q;
+}
+else if (s=="IPE500") {document. formular.x1.value=p*90.7
+document. formular.x2.value=p*90.7*q;
+}
+else if (s=="IPE550") {document. formular.x1.value=p*106
+document. formular.x2.value=p*106*q;
+}
+else {document.formular.x1.value=p/q
+document.formular.x2.value=(p+q);
+}
+}</SCRIPT>
+</HEAD>
+<BODY>
+<FORM name=formular>
+<table style="width:100%; height:250px;"><tr><td style="width:60%;">L&auml;nge des Tr&auml;gers in Meter: </td><td><INPUT TYPE=text NAME=tl VALUE="" SIZE=8> </td></tr>
+<tr><td>Preis per Kilogramm:</td><td><INPUT TYPE=text NAME=mp VALUE="" SIZE=8> </td></tr>
+<tr><td>Tr&auml;gerart</td><td><select name="s">
+<option>IPE80</option><option>IPE100</option><option>IPE120</option><option>IPE140</option><option>IPE160</option><option>IPE180</option><option>IPE200</option><option>IPE220</option>
+<option>IPE240</option><option>IPE270</option><option>IPE300</option><option>IPE330</option><option>IPE360</option><option>IPE400</option><option>IPE450</option><option>IPE500</option>
+<option>IPE550</option>
+</select></td></tr>
+<tr><td colspan=2><INPUT TYPE=button NAME=knopf VALUE="Tr&auml;ger berechnen!" onclick="loese()"> </td></tr>
+<tr><td>Gewicht des Tr&auml;gers</td><td><INPUT TYPE=text NAME=x1 VALUE="" SIZE=8></td></tr>
+<tr><td>Preis des Tr&auml;gers</td><td><INPUT TYPE=text NAME=x2 VALUE="" SIZE=8></td></tr>
+<tr><td colspan="2" style="font-size:5pt;">Anmerkung: Trotz sorgf&auml;ltiger Programmierung des Programms lassen sich Fehler nicht g&auml;nzlich ausschlie&szlig;en,
+daher k&ouml;nnen wir keine Haftung f&uuml;r Fehler jedweger Form &uuml;bernehmen.</td></tr>
+</table>
+</FORM>
+</BODY>
+</HTML>
