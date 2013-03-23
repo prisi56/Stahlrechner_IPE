@@ -1,0 +1,30 @@
+form {
+         background-image:url(images/hg.png);
+         background-repeat:no-repeat;
+         padding:20px;
+         border:6px solid #ddd;
+         }
+td, input, select, textarea {
+         font-size:11px;
+         font-family:Verdana,sans-serif;
+         }
+input, select, textarea {
+         color:#00c; }
+.Bereich, .Feld {
+         background-color:#ffa;
+         width:300px; border:6px solid #ddd;
+         }
+.Auswahl {
+         background-color:#dff;
+         width:300px;
+         border:6px solid #ddd;
+         }
+.Check, .Radio {
+         background-color:#ddff;
+         border:1px solid #ddd;
+         }
+.Button {
+         background-color:#aaa;
+         color:#fff;
+         width:200px;
+         border:6px solid #ddd; }
