@@ -1,11 +1,11 @@
 form {
-         background-image:url(images/hg.png);
+         background-image:url(../images/hg.png);
          background-repeat:no-repeat;
          padding:20px;
          border:6px solid #ddd;
          }
 td, input, select, textarea {
-         font-size:11px;
+         font-size:13px;
          font-family:Verdana,sans-serif;
          }
 input, select, textarea {
