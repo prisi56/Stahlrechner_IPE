@@ -2,6 +2,7 @@ form {
          background-image:url(../images/hg.png);
          background-repeat:no-repeat;
          padding:20px;
+         background-color:#fcfdfa;
          border:6px solid #ddd;
          }
 td, input, select, textarea {
@@ -9,9 +10,10 @@ td, input, select, textarea {
          font-family:Verdana,sans-serif;
          }
 input, select, textarea {
-         color:#00c; }
+         color:#00c;
+         background-color:#ffffdd;
+         border-radius: 5px; }
 .Bereich, .Feld {
-         background-color:#ffa;
          width:300px; border:6px solid #ddd;
          }
 .Auswahl {
